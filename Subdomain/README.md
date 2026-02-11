@@ -2,11 +2,11 @@
 
 ##  1) use the sublist3r
 - sudo apt install sublist3r
-  run this  -  sublist3r -d optimizerx.com
+  run this  -  sublist3r -d example.com
 
 ##  2) use the amass
 - sudo apt install amass
-  run this - amass enum -passive -d optimizerx.com
+  run this - amass enum -passive -d example.com
 
 ##  3) install golang (using waybackurls)
 - sudo apt install golang
@@ -19,10 +19,10 @@ waybackurls
 ubuntu@subdomain:~/go/bin$ ./waybackurls -h
 
 - nano domain.txt
-- write your root url in this field => optimizerx.com
+- write your root url in this field => example.com
 
 run this command after all this setup
-- cat optimizerx.txt | ./waybackurls > optimizerx.urls
+- cat optimizerx.txt | ./waybackurls > example.urls
 
 ##  4) using subfinder
 
@@ -59,7 +59,7 @@ Verify:
 subfinder -version
 
 Final step Run this command
-- subfinder -dL optimizerx.txt -all -recursive -o subdomain.txt
+- subfinder -dL example.txt -all -recursive -o subdomain.txt
 
 ##  5) Check the alive Domain
 the last step is we are findout the domains but how to check this domain's are working or not 
